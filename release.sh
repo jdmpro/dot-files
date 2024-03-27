@@ -37,7 +37,7 @@ if [ -f dotfiles.tar.gz ]; then
 		echo -e "${NOTE} Proceeding to download the latest release."
 		
 		# Delete existing directories starting with shredder-dotfiles
-      find . -type d -name 'shredder-dotfiles*' -exec rm -rf {} +
+      find . -type d -name 'jdmpro-dotfiles*' -exec rm -rf {} +
       rm -f dotfiles.tar.gz
       printf "${WARN} Removed existing dotfiles.tar.gz.\n"
     else
@@ -76,15 +76,15 @@ if curl -L "$latest_tarball_url" -o "$file_name"; then
   tar -xzf "$file_name" || exit 1
 
   # delete existing Hyprland-Dots
-  rm -rf shredder-dotfiles
+  rm -rf jdmpro-dotfiles
 
   # Identify the extracted directory
   extracted_directory=$(tar -tf "$file_name" | grep -o '^[^/]\+' | uniq)
 
   # Rename the extracted directory to JaKooLit-Hyprland-Dots
-  mv "$extracted_directory" shredder-dotfiles || exit 1
+  mv "$extracted_directory" jdmpro-dotfiles || exit 1
 
-  cd "shredder-dotfiles" || exit 1
+  cd "jdmpro-dotfiles" || exit 1
 
   # Set execute permission for copy.sh and execute it
   chmod +x copy.sh
