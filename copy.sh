@@ -12,11 +12,11 @@ if [[ $EUID -eq 0 ]]; then
     exit 1
 fi
 
-/*printf "\n%.0s" {1..3}  
+printf "\n%.0s" {1..3}  
 echo "  "
 echo "  "
 echo "  "
-printf "\n%.0s" {1..2} 8*/
+printf "\n%.0s" {1..2} 8
 
 # Set some colors for output messages
 OK="$(tput setaf 2)[OK]$(tput sgr0)"
