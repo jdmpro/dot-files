@@ -10,11 +10,11 @@ ORANGE=$(tput setaf 166)
 YELLOW=$(tput setaf 3)
 RESET=$(tput sgr0)
 
-printf "${NOTE} Downloading / Checking for existing dotfiles.tar.gz...\n"
+printf "${NOTE} Downloading / Checking for existing dot-files.tar.gz...\n"
 
 # Check if Hyprland-Dots.tar.gz exists
 if [ -f dot-files.tar.gz ]; then
-  printf "${NOTE} dotfiles.tar.gz found.\n"
+  printf "${NOTE} dot-files.tar.gz found.\n"
 
   # Get the version from the existing tarball filename
   existing_version=$(echo dot-files.tar.gz | grep -oP 'v\d+\.\d+\.\d+' | sed 's/v//')
