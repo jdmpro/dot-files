@@ -218,8 +218,8 @@
      
 "clock": {
     "interval": 1,
-    //"format": " {:%I:%M %p}", // AM PM format
-    "format": " {:%H:%M:%S}",
+    "format": " {:%I:%M %p}", // AM PM format
+    //"format": " {:%H:%M:%S}",
     "format-alt": " {:%H:%M   %Y, %d %B, %A}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -573,8 +573,8 @@
     "format-alt-click": "click",
     "interval": 3600,
     "return-type": "json",
-    "exec": "~/.config/hypr/UserScripts/Weather.sh",
-    //"exec": "~/.config/hypr/UserScripts/Weather.py",
+    //"exec": "~/.config/hypr/UserScripts/Weather.sh",
+    "exec": "~/.config/hypr/UserScripts/Weather.py",
     "exec-if": "ping wttr.in -c1",
     "tooltip" : true,
 },
