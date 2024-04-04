@@ -3,12 +3,12 @@ show-failed-attempts
 clock
 
 # AM/PM formats (American Format)
-#datestr=%a, %B %e
-#timestr=%I:%M %p
+datestr=%a, %B %e
+timestr=%I:%M %p
 
 #24 HRS clock format and standard Europe Date Format
-timestr=%H:%M:%S
-datestr=%d %B, %a
+#timestr=%H:%M:%S
+#datestr=%d %B, %a
 
 # Add current display as background
 #screenshots
