@@ -44,7 +44,7 @@ inc_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
         pamixer -u && notify_user
     fi
-    pamixer -i 5 && notify_user
+    pamixer -i 1 && notify_user
 }
 
 # Decrease Volume
@@ -52,7 +52,7 @@ dec_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
         pamixer -u && notify_user
     fi
-    pamixer -d 5 && notify_user
+    pamixer -d 1 && notify_user
 }
 
 # Toggle Mute
@@ -104,7 +104,7 @@ inc_mic_volume() {
     if [ "$(pamixer --default-source --get-mute)" == "true" ]; then
         pamixer --default-source -u && notify_mic_user
     fi
-    pamixer --default-source -i 5 && notify_mic_user
+    pamixer --default-source -i 1 && notify_mic_user
 }
 
 # Decrease MIC Volume
@@ -112,7 +112,7 @@ dec_mic_volume() {
     if [ "$(pamixer --default-source --get-mute)" == "true" ]; then
         pamixer --default-source -u && notify_mic_user
     fi
-    pamixer --default-source -d 5 && notify_mic_user
+    pamixer --default-source -d 1 && notify_mic_user
 }
 
 # Execute accordingly

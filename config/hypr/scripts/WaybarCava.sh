@@ -33,7 +33,7 @@ ascii_max_range = 7
 EOF
 
 # Kill cava if it's already running
-pkill -f "cava -p $config_file"
+#pkill -f "cava -p $config_file"
 
 # Read stdout from cava and perform substitution in a single sed command
 cava -p "$config_file" | sed -u "$dict"
