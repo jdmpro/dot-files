@@ -16,11 +16,11 @@ if [[ $# -lt 1 ]] || [[ ! -d $1   ]]; then
 fi
 
 # Edit below to control the images transition
-export SWWW_TRANSITION_FPS=144
-export SWWW_TRANSITION_TYPE=simple
+export SWWW_TRANSITION_FPS=15
+export SWWW_TRANSITION_TYPE=wave
 
 # This controls (in seconds) when to switch to the next image
-INTERVAL=60
+INTERVAL=6000
 
 while true; do
 	find "$1" \
