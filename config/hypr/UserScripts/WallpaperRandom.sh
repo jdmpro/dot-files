@@ -10,7 +10,7 @@ RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
 
 # Transition config
-FPS=144
+FPS=15
 TYPE="random"
 DURATION=1
 BEZIER=".43,1.19,1,.4"
