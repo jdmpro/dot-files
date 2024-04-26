@@ -3,7 +3,7 @@ show-failed-attempts
 clock
 
 # AM/PM formats (American Format)
-datestr=%a, %B %e
+datestr=%a, %B %e %Y
 timestr=%I:%M %p
 
 #24 HRS clock format and standard Europe Date Format
@@ -14,14 +14,14 @@ timestr=%I:%M %p
 #screenshots
 
 # Add an image as a background. You need to disable screenshots above
-image=$HOME/.config/rofi/.current_wallpaper
+#image=$HOME/.config/rofi/.current_wallpaper
 
 # Effect for background
 # NOTE: if you choose image as wallpaper, you may want to comment (#) these effects 
 # effect-blur=9x5
 # effect-vignette=0.5:0.5
 # effect-greyscale
-# effect-pixelate=5
+effect-pixelate=5
 
 color=1f1d2e80
 font="Fira Code Medium"
@@ -31,29 +31,34 @@ indicator-thickness=20
 
 text-color=e0def4
 text-caps-lock-color=ffffff
-inside-color=000000
+inside-color=1f1d2e80
 line-color=1f1d2e
-ring-color=191724
-separator-color=00000000
+ring-color=19172480
+separator-color=3399ff
+
 text-ver-color=ffffff
-inside-ver-color=000000
-line-ver-color=0000ff
-ring-ver-color=2777ff
+inside-ver-color=00000080
+line-ver-color=00ff00
+ring-ver-color=00ff0080
+
 text-wrong-color=ff0000
 inside-wrong-color=000000
 line-wrong-color=000000
-ring-wrong-color=ff8000
-text-clear-color=000000
-inside-clear-color=ffffff
-line-clear-color=00ff00
-ring-clear-color=0ffff0
-key-hl-color=ff0000
-bs-hl-color=ffffff
+ring-wrong-color=ff000080
+
+text-clear-color=ffffff
+inside-clear-color=00000080
+line-clear-color=d88800
+ring-clear-color=ff800080
+
+key-hl-color=3399ff80
+bs-hl-color=ffffff80
 
 grace=1
 grace-no-mouse
 grace-no-touch
-fade-in=0.2
+fade-in=1
+fade-out=1
 ignore-empty-password
 
 
