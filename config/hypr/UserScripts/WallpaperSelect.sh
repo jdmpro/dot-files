@@ -8,7 +8,7 @@ SCRIPTSDIR="$HOME/.config/hypr/scripts"
 wallDIR="$HOME/Pictures/wallpapers"
 
 # Transition config
-FPS=144
+FPS=15
 TYPE="wave"
 DURATION=1
 BEZIER=".43,1.19,1,.4"
