@@ -1,1 +1,85 @@
-for symlink
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// ### DUAL TOP and BOTTOM ### //
+
+[{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 1,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+	"custom/updater",
+	"cpu", 
+	"temperature", 
+	"memory",
+	"disk", 
+	"hyprland/window",
+	],
+  
+"modules-center": [
+	"custom/weather",
+	"clock",
+	"custom/swaync",
+	], 
+
+"modules-right": [
+	"custom/cava_mviz",
+	"mpris",
+	"custom/playerctl",
+	"battery", 
+	"backlight",
+	"pulseaudio",
+	//"wireplumber",
+	"pulseaudio#microphone",
+	"bluetooth",
+	"custom/lock",
+	"custom/power",
+	],
+},
+
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "bottom",
+"spacing": 5,
+"fixed-center": true,
+"ipc": true,
+"height": 0,
+"margin-left": 8,
+"margin-right": 8,
+//"margin-bottom": 0,
+
+"modules-left": [
+	"custom/light_dark",
+	"custom/cycle_wall",
+	"custom/keyboard",
+	"keyboard-state",
+	"wlr/taskbar",
+	 ],
+
+"modules-center": [
+	"custom/menu", 
+	"hyprland/workspaces#4",
+	"custom/clip",
+	],
+
+"modules-right": [
+	"custom/keybinds",
+	"network#speed",
+	"tray",
+	"idle_inhibitor",
+	],
+
+}]
