@@ -8,8 +8,8 @@ SCRIPTSDIR="$HOME/.config/hypr/scripts"
 wallDIR="$HOME/Pictures/wallpapers"
 
 # Transition config
-FPS=30
-TYPE="wipe"
+FPS=144
+TYPE="wave"
 DURATION=1
 BEZIER=".43,1.19,1,.4"
 SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION"
